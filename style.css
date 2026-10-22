@@ -194,3 +194,7 @@ a.card:hover{transform:translateY(-2px);border-color:var(--plum)}
 .card.film img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;margin-bottom:14px}
 .book-art{margin:0}
 .book-art img{width:100%;border-radius:18px;box-shadow:0 22px 50px -24px rgba(60,30,60,.45)}
+
+.about-head:has(.portrait.wide){grid-template-columns:1fr 1.1fr}
+.about-head .portrait.wide{aspect-ratio:3/2}
+@media (max-width:640px){.about-head .portrait.wide{max-width:100%}}
