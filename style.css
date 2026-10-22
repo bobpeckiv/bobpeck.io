@@ -260,3 +260,12 @@ button.btn{cursor:pointer;font-family:var(--sans)}
   .about-head,.about-head:has(.portrait.wide){grid-template-columns:1fr}
   .about-head .portrait,.about-head .portrait.wide{order:0;max-width:100%;aspect-ratio:3/2}
 }
+
+.lead-photo{margin:0 0 22px}
+.lead-photo img{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:35% 40%;border-radius:24px}
+.split.split-lg{grid-template-columns:340px 1fr;gap:48px}
+@media (max-width:640px){
+  .lead-photo img{aspect-ratio:4/3;object-position:30% 40%;border-radius:18px}
+  .split.split-lg{grid-template-columns:1fr;gap:24px}
+  .split.split-lg .bookcover{width:75%;max-width:280px}
+}
