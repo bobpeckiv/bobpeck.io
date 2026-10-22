@@ -44,8 +44,8 @@ p{margin:0 0 16px}
 .hero .lede{font-size:22px;margin-top:26px;max-width:30ch}
 .orb-wrap{position:relative;width:100%;max-width:420px;aspect-ratio:1;justify-self:center;display:grid;place-items:center}
 .orb{position:absolute;inset:0;border-radius:50%;
-  background:radial-gradient(circle at 50% 50%,#FFFFFF 0%,#FFF6F0 14%,#F07ACB 34%,#B48BF0 50%,#7FB2F2 64%,#8FE3CF 78%,#F2EC6A 90%,rgba(242,236,106,0) 100%);
-  filter:blur(3px);animation:breathe 9s ease-in-out infinite}
+  background:radial-gradient(circle at 50% 76%,#FFFBEA 0%,#FBD9A0 6%,#EE7FA6 15%,#B262A3 27%,#8FCDEE 43%,#A9DACB 57%,#C9E08E 69%,#F5EC1C 80%);
+  box-shadow:inset 0 0 18px 4px #F5EC1C;animation:breathe 9s ease-in-out infinite}
 .orb-wrap .me{position:relative;width:62%;border-radius:50%;box-shadow:0 18px 50px -18px rgba(60,20,60,.45)}
 @keyframes breathe{0%,100%{transform:scale(1);opacity:.95}50%{transform:scale(1.04);opacity:1}}
 @media (prefers-reduced-motion:reduce){.orb{animation:none}}
@@ -161,3 +161,13 @@ a.card:hover{transform:translateY(-2px);border-color:var(--plum)}
 .embed iframe{display:block;width:100%;border:0}
 .video{aspect-ratio:16/9}
 .video iframe{height:100%}
+
+.bookcover{width:100%;border-radius:4px;box-shadow:0 22px 44px -22px rgba(50,30,20,.45),0 0 0 1px #E7E0D6}
+@media (max-width:640px){.split .bookcover{width:60%;max-width:220px}}
+
+/* product + post cards */
+.card.product img,.card.post img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;margin-bottom:14px;background:#f3efe9}
+.card.post img{aspect-ratio:16/10}
+.card.post .post-orb{width:100%;aspect-ratio:16/10;border-radius:12px;margin-bottom:14px;background:radial-gradient(circle at 50% 76%,#FFFBEA 0%,#FBD9A0 6%,#EE7FA6 15%,#B262A3 27%,#8FCDEE 43%,#A9DACB 57%,#C9E08E 69%,#F5EC1C 80%)}
+.card.product h3,.card.post h3{margin:6px 0 4px}
+.card.product p{margin:0;font-size:15px}
