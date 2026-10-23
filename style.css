@@ -322,3 +322,6 @@ button.btn{cursor:pointer;font-family:var(--sans)}
 .pull cite{display:block;margin-top:8px;font-style:normal;font-family:var(--sans);font-size:13px;font-weight:700;color:var(--plum)}
 .card.review p{font-style:italic;font-size:18px;line-height:1.5;color:var(--ink)}
 .card.review cite{margin-top:auto;font-style:normal;font-family:var(--sans);font-size:13px;font-weight:700;color:var(--plum)}
+
+a.card.review{text-decoration:none}
+.pull cite a{color:var(--plum)}
