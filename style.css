@@ -311,3 +311,14 @@ button.btn{cursor:pointer;font-family:var(--sans)}
 .dl-grid{grid-template-columns:repeat(6,1fr)}
 @media (max-width:860px){.dl-grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:640px){.dl-grid{grid-template-columns:1fr 1fr}#book-bob .btn{width:100%}}
+
+.footnav{display:flex;flex-wrap:wrap;gap:8px 22px;margin:24px 0 0;font-family:var(--sans);font-weight:700;font-size:16px}
+.footnav a{color:var(--plum);text-decoration:none}
+.footnav a:hover{text-decoration:underline}
+
+.rating{font-family:var(--sans);font-size:15px;margin:16px 0 0}
+.rating .stars{color:#E2A400;letter-spacing:2px}
+.pull{margin:18px 0 0;padding:4px 0 4px 18px;border-left:4px solid var(--plum);font-style:italic;font-size:19px;line-height:1.45}
+.pull cite{display:block;margin-top:8px;font-style:normal;font-family:var(--sans);font-size:13px;font-weight:700;color:var(--plum)}
+.card.review p{font-style:italic;font-size:18px;line-height:1.5;color:var(--ink)}
+.card.review cite{margin-top:auto;font-style:normal;font-family:var(--sans);font-size:13px;font-weight:700;color:var(--plum)}
