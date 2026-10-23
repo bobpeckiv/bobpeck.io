@@ -279,3 +279,13 @@ button.btn{cursor:pointer;font-family:var(--sans)}
 @media (max-width:640px){
   .feature-split{grid-template-columns:1fr;gap:20px}
 }
+
+.list.card{padding:6px 26px}
+@media (max-width:640px){.list.card{padding:4px 20px}}
+
+.mk-photo{object-position:62% 30%}
+.dl-grid{grid-template-columns:repeat(5,1fr)}
+@media (max-width:640px){.dl-grid{grid-template-columns:1fr 1fr}}
+.mk-top{grid-template-columns:1.1fr 1fr;align-items:center}
+.mk-top .mk-photo{order:2;aspect-ratio:4/3;object-position:62% 35%}
+@media (max-width:640px){.mk-top{grid-template-columns:1fr}.mk-top .mk-photo{order:-1;max-width:100%}}
