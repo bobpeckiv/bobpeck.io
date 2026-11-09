@@ -370,3 +370,4 @@ section[id]{scroll-margin-top:16px}
   .chips{padding-bottom:24px}
 }
 @media (max-width:1040px){header.wrap{overflow-x:clip}}
+.card.product .free{color:var(--plum);font-weight:700}
