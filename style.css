@@ -15,7 +15,7 @@
   --serif:Palatino,"Palatino Linotype","Book Antiqua",Georgia,serif;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{overflow-x:hidden;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--white);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.6}
 img{max-width:100%;display:block}
 a{color:var(--plum);text-underline-offset:3px;text-decoration-thickness:1px}
@@ -174,7 +174,7 @@ a.card:hover{transform:translateY(-2px);border-color:var(--plum)}
 
 /* photos */
 .hero-photo{margin:0;position:relative;justify-self:center;width:100%;max-width:470px}
-.hero-photo::before{content:"";position:absolute;inset:-7%;z-index:-1;border-radius:50%;filter:blur(30px);opacity:.75;background:radial-gradient(circle at 50% 76%,#FFFBEA 0%,#FBD9A0 6%,#EE7FA6 15%,#B262A3 27%,#8FCDEE 43%,#A9DACB 57%,#C9E08E 69%,#F5EC1C 80%)}
+.hero-photo::before{content:"";position:absolute;inset:-24%;z-index:-1;border-radius:50%;filter:blur(36px);opacity:.9;background:radial-gradient(circle at 50% 76%,#FFFBEA 0%,#FBD9A0 6%,#EE7FA6 15%,#B262A3 27%,#8FCDEE 43%,#A9DACB 57%,#C9E08E 69%,#F5EC1C 80%)}
 .hero-photo img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px;box-shadow:0 26px 60px -26px rgba(40,20,40,.5)}
 .about-head{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:center;padding:48px 0}
 .about-head .portrait{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;box-shadow:0 22px 50px -24px rgba(40,20,40,.45)}
@@ -185,6 +185,7 @@ a.card:hover{transform:translateY(-2px);border-color:var(--plum)}
 .stills img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
 @media (max-width:640px){
   .hero .hero-photo{max-width:340px}
+  .hero-photo::before{inset:-12%}
   .about-head{grid-template-columns:1fr;gap:22px;padding:32px 0}
   .about-head .portrait{max-width:260px;order:-1}
   .stills{grid-template-columns:1fr 1fr}
@@ -358,7 +359,7 @@ a.card.review{text-decoration:none}
 .card.product .kind{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
 .pgrid .card.product h3{font-size:17px;margin:4px 0 6px}
 .pgrid .card.product p{font-family:var(--sans);font-weight:700;color:var(--ink)}
-html{scroll-behavior:smooth}
+html{overflow-x:hidden;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 section[id]{scroll-margin-top:16px}
 @media (max-width:860px){.pgrid{grid-template-columns:repeat(3,1fr)}}
@@ -368,3 +369,4 @@ section[id]{scroll-margin-top:16px}
   .pgrid .card.product h3{font-size:15px}
   .chips{padding-bottom:24px}
 }
+@media (max-width:1040px){header.wrap{overflow-x:clip}}
