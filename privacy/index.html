@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Bob Peck</title>
+<meta name="description" content="How bobpeck.io uses the Meta Pixel and what you can do about it.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bob Peck">
+<meta property="og:title" content="Privacy · Bob Peck">
+<meta property="og:description" content="How bobpeck.io uses the Meta Pixel.">
+<meta property="og:url" content="https://bobpeck.io/privacy/">
+<meta property="og:image" content="https://bobpeck.io/images/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="../images/bob.png">
+<link rel="stylesheet" href="../style.css">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','326172492859892');
+fbq('track','PageView');
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;
+  var h=a.hostname||'',d=null;
+  if(/etsy\.com$/.test(h))d='Etsy';
+  else if(/(amazon\.com|amzn\.to|audible\.com)$/.test(h))d='Amazon';
+  else if(/stan\.store$/.test(h))d='Stan';
+  else if(/substack\.com$/.test(h))d='Substack';
+  if(d)fbq('trackCustom','OutboundClick',{destination:d,link_text:((a.querySelector('h3')||a).innerText||'').replace(/\s+/g,' ').trim().slice(0,80),page:location.pathname});
+},true);
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=326172492859892&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel -->
+</head>
+<body>
+
+<header class="wrap">
+  <nav class="nav">
+    <a class="brand" href="../">Bob Peck</a>
+    <div class="links">
+      <a href="../">Home</a>
+      <a href="../about/">About</a>
+      <a href="../listen/">Listen &amp; Watch</a>
+      <a href="../shop/">Shop</a>
+      <a href="../facilitate/">Facilitate</a>
+    </div>
+  </nav>
+  <div class="aura"></div>
+  <div class="narrow page-head">
+    <span class="label">Privacy</span>
+    <h1 class="h1-page">What this site keeps track of.</h1>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="band paper narrow" id="privacy">
+    <p class="muted small">Last updated November 9, 2026</p>
+
+    <h3>The short version</h3>
+    <p>This site doesn&rsquo;t sell anything directly, ask you to log in, or keep a database of visitors. It does use the Meta Pixel, a small piece of code from Meta (the company behind Facebook and Instagram), so I can see which pages people visit and show my work to people who&rsquo;ve already shown interest in it.</p>
+
+    <h3>What the Meta Pixel collects</h3>
+    <p>When you load a page here, the pixel can send Meta the page address, the time of the visit, basic browser and device details, and which outbound links you click, like a link to my Etsy shop, Amazon or Stan store. Meta may connect this to a Facebook or Instagram account if you have one. I see this information in aggregate, as counts and audiences, not as a list of names.</p>
+
+    <h3>How I use it</h3>
+    <p>To understand which pages and products people care about, to measure whether my ads work, and to show ads on Facebook and Instagram to people who have visited this site. Meta&rsquo;s own use of the data is covered by the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</p>
+
+    <h3>Your choices</h3>
+    <p>You can control how Meta uses this kind of data in your <a href="https://www.facebook.com/adpreferences/ad_settings">Facebook ad settings</a>, opt out of interest-based ads through the <a href="https://optout.aboutads.info/">Digital Advertising Alliance</a>, or block third-party cookies and trackers in your browser. The site works fine either way.</p>
+
+    <h3>Other sites I link to</h3>
+    <p>Purchases happen on Etsy, Amazon, Audible and Stan, and some pages embed players from Spotify and YouTube. Each of those has its own privacy policy, and what you do there is between you and them.</p>
+
+    <h3>Questions</h3>
+    <p>Email me at <a href="mailto:bob@mindheartlens.com">bob@mindheartlens.com</a>.</p>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <div class="aura"></div>
+  <nav class="footnav">
+    <a href="../">Home</a>
+    <a href="../about/">About</a>
+    <a href="../listen/">Listen &amp; Watch</a>
+    <a href="../shop/">Shop</a>
+    <a href="../facilitate/">Facilitate</a>
+  </nav>
+  <div class="social">
+    <a href="https://www.instagram.com/bobpeck">Instagram</a>
+    <a href="https://www.tiktok.com/@iambobpeck">TikTok</a>
+    <a href="https://www.threads.net/@bobpeck">Threads</a>
+    <a href="https://youtube.com/@iambobpeck">YouTube</a>
+    <a href="https://bobpeck.substack.com">Substack</a>
+    <a href="https://linkedin.com/in/bobpeckiv">LinkedIn</a>
+    <a href="https://www.etsy.com/shop/KarmicReliefShop">Etsy</a>
+    <a href="https://stan.store/bobpeck">Stan</a>
+  </div>
+  <p>© Bob Peck, Mind Heart Lens LLC · <a href="../privacy/">Privacy</a></p>
+</footer>
+
+</body>
+</html>
