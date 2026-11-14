@@ -30,7 +30,7 @@ document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;
   var h=a.hostname||'',d=null;
   if(/etsy\.com$/.test(h))d='Etsy';
-  else if(/(amazon\.com|amzn\.to|audible\.com)$/.test(h))d='Amazon';
+  else if(/(amazon\.com|amzn\.to|link\.amazon|audible\.com)$/.test(h))d='Amazon';
   else if(/stan\.store$/.test(h))d='Stan';
   else if(/substack\.com$/.test(h))d='Substack';
   if(d)fbq('trackCustom','OutboundClick',{destination:d,link_text:((a.querySelector('h3')||a).innerText||'').replace(/\s+/g,' ').trim().slice(0,80),page:location.pathname});
@@ -170,11 +170,12 @@ document.addEventListener('click',function(e){
   <section class="band lavender" id="next">
     <div class="grid2" style="align-items:center">
       <div>
-        <span class="label">Almost here</span>
+        <span class="label">Out now</span>
         <h2>What the Awakened Ones Say</h2>
         <p>A picture book for kids ages 6 to 10 about what the awakened ones of every tradition found when they looked inside. Illustrated by Anum Khan.</p>
         <div class="btns">
-          <a class="btn solid" href="https://bobpeck.substack.com">Hear when it's out</a>
+          <a class="btn solid" href="https://link.amazon/B00AO1odj">Get it on Amazon</a>
+          <a class="btn" href="https://whattheawakenedonessay.com/">Look inside</a>
         </div>
       </div>
       <figure class="book-art"><img src="images/mirabai.jpg" alt="Illustration of the mystic poet Mirabai dancing with her tanpura as villagers look on" loading="lazy"></figure>
